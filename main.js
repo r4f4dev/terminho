@@ -5,7 +5,7 @@ var multiLineString = `
  //           / /     //             / /     //   / /     //        || / /  
 //           / /     //             / /     ((___/ /     ((____     ||/ /   
 
-Welcome to Terminal.This is a best hacking app in the world!
+Welcome to best super mupper advanced hacking app in the world!
 Type help for a list of commands. [[!;;;;https://github.com/r4f4dev](c) r4f4dev]
 `;
 
@@ -15,10 +15,26 @@ $(function () {
       help: function () {
         this.echo(`Available commands: 
           help - show all commands with descriptions
+          sound - [on , off] - enable or disable sound
           hp - hack Pentagon!
           gc - grab a cat!
           clear - clear console
         `);
+      },
+      sound: function (onoff) {
+         var music = document.querySelector("audio");
+
+         music.addEventListener("ended", function () {
+           music.play();
+         });
+
+        if(onoff == "on") {
+          music.play();
+          this.echo(`Sound: enabled`);
+        } else {
+          music.pause();
+          this.echo(`Sound: disabled`);
+        }
       },
       hp: function () {
         this.echo("Process started...");

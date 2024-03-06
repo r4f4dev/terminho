@@ -5,10 +5,6 @@
     --size: 1.4;
 }
 
-html {
-    min-height: 100%;
-}
-
 body {
     font-size: 6px;
     margin: 0;
@@ -90,13 +86,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
-}
     box-sizing: inherit;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    text-transform: uppercase;
 }
