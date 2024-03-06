@@ -17,6 +17,7 @@ $(function () {
           help - show all commands with descriptions
           hp - hack Pentagon!
           gc - hack a cat!
+          clear - clear console
         `);
       },
       hp: function () {
