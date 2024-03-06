@@ -16,7 +16,7 @@ $(function () {
         this.echo(`Available commands: 
           help - show all commands with descriptions
           hp - hack Pentagon!
-          gc - hack a cat!
+          gc - grab a cat!
           clear - clear console
         `);
       },
@@ -46,7 +46,7 @@ $(function () {
       },
       gc: function () {
         this.echo("[[@;;;;https://placekitten.com/300/300]]");
-        this.echo("im hacked :(");
+        this.echo("Happy hacking :)");
       },
     },
     {
