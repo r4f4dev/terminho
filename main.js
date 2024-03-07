@@ -31,9 +31,11 @@ $(function () {
         if(onoff == "on") {
           music.play();
           this.echo(`Sound: enabled`);
-        } else {
+        }else if(onoff == "off") {
           music.pause();
           this.echo(`Sound: disabled`);
+        }else {
+          this.echo(`Usage: sound [on, off]`);
         }
       },
       hp: function () {
@@ -66,7 +68,7 @@ $(function () {
       },
     },
     {
-      greetings: multiLineString, // Установка приветственного сообщения
+      greetings: multiLineString,
     }
   );
 });
